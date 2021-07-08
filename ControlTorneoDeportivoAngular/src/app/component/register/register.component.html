@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+      <div class="col col-lg-6">
+        <form>
+            <div class="mb-3">
+              <label for="inputUser" class="form-label">User</label>
+              <input type="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="usuario" #usuario="ngModel" [(ngModel)]="user.usuario">
+            </div>
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Nombre</label>
+              <input type="user" class="form-control" id="inputName" aria-describedby="emailHelp" name="name" #name="ngModel" [(ngModel)]="user.name">
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="password" #password="ngModel" [(ngModel)]="user.password">
+              <div id="text" class="form-text">No compartas tus credenciales con nadie.</div>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="registrar()">Registrar</button>
+          </form>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+  <div class="container">
+      <div class="row justify-content-md-center">
+          <div class="col col-lg-6">
+            <form>
+                <div class="mb-3">
+                  <label for="inputUser" class="form-label">User</label>
+                  <input type="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="usuario" #usuario="ngModel" [(ngModel)]="userModel.usuario">
+                  <div id="text" class="form-text">No compartas tus credenciales con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" #password="ngModel" [(ngModel)]="userModel.password">
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="login()">Ingresar</button>
+              </form>
+          </div>
+      </div>
+  </div>
